@@ -7,7 +7,6 @@ defmodule MyList do
   end
 
   defp _span([head | tail]) do
-    IEx.pry
     [ head | _span([head + 1 | tail])]
   end
 end
